@@ -58,9 +58,7 @@
 
         li.addEventListener("click", ()=>{
             productDisplay.setAttribute("src",el.image)
-        })
+        });
 
-    })
-
-
+    });
 })();
