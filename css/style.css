@@ -23,7 +23,7 @@
     --c8:#939C9F;
     --c9:#202324;    
 
-    --f1:"Roboto";
+    --f1:"HK Grotesk";
     --f2:"Poppins";
     --f3:"Ubuntu";
 }
@@ -263,7 +263,7 @@ a {font-size: 1rem; font-weight:normal; display: block;}
     .sm1{width: 25%; float: left;}
     .sm2{width: 50%; float: left;}
     .sm3{width: 75%; float: left;}
-    .sm4{width: 100%; float: left; }
+    .sm4{width: 100%; float: left;}
 
     /* ///////////////////////////////////////////Flex/////////////////////////////////////// */
     .sflex{display: flex;}
