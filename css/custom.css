@@ -7,7 +7,8 @@ nav{height: 80px;}
 .handburg{display: none;}
 .mainMenu{list-style: none; font-family: var(--f1);}
 .mainMenu>li{margin: 0 .3rem;}
-.mainMenu>li>a{display: inline-block; padding: 1rem; color: var(--c7);}
+.mainMenu>li>a{display: inline-block; padding: 1rem 0; margin: 0 1rem; color: var(--c7);}
+.mainMenu>li>a:hover{border-bottom: 3px solid #19CCA3; padding-bottom: calc(1rem - 3px);}
 .login{background-color: #030f3f; border: 1px solid #2777d8; color: #fff;}
 .signup{background-color: #fff; border: 1px solid #fff;}
 
@@ -32,6 +33,7 @@ nav{height: 80px;}
 .totalAmount input{width: 1.3rem;}
 .totalAmount p>span{background-color: #B1FBE3; border-radius: .5rem; padding: .2rem;}
 .cartBtn{width: 100%; cursor: pointer; border-radius: .2rem; background-color: #00BA74; height: 4rem; font-size: 1.2rem; font-weight: normal;}
+.cartBtn:hover{background-color: #0aad6f;}
 /* product gallery style */
 .productGallery>ul{width: 100%; height: 3.7rem; }
 .productGallery>ul>li{width: 3.7rem; height: 3.7rem; margin: 0 .2rem; overflow: hidden; }
