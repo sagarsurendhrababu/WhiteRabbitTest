@@ -45,9 +45,7 @@
     ];
 
     const productGalleryCanvas = document.querySelector(".productGalleryCanvas");
-    const productDisplay = document.querySelector(".productDisplay img")
-
-    console.log(productDisplay);
+    const productDisplay = document.querySelector(".productDisplay img");
 
     productData.forEach(el => {
         const li = document.createElement("li");
@@ -57,8 +55,12 @@
         img.setAttribute("src", el.thumb);
 
         li.addEventListener("click", ()=>{
-            productDisplay.setAttribute("src",el.image)
+            productDisplay.setAttribute("src",el.image);
+            productDisplay.setAttribute("alt",el.id)
         });
-
     });
+
+
+
+
 })();
