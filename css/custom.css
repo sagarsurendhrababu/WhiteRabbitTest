@@ -45,6 +45,11 @@ nav{height: 80px;}
 .featurePoints p{display: flex; margin-bottom: 1rem;}
 .featurePoints p>img{margin-right: 1rem;}
 
+/*////////////////////////////////////// PC device view port //////////////////////////////////////*/
+@media screen and (max-width: 1400px) {   
+  .wrapper{width:90%; height: auto;} 
+  .headerWrapper{width: 90%;}             
+}
 
 /*////////////////////////////////////// Laptop view port //////////////////////////////////////*/
 @media screen and (max-width: 900px) {
