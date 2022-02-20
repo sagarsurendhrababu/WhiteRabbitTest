@@ -256,7 +256,7 @@ a {font-size: 1rem; font-weight:normal; display: block;}
 }  
 /* Mobile view port */      
 @media screen and (max-width: 598px) {
-    html{font-size: 12px;}
+    html{font-size: 13px;}
     .wrapper{width:95%; height: auto;}
     .autoH{height: auto!important;}
     /* colum settings */ 

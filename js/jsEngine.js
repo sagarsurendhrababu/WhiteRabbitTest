@@ -46,8 +46,11 @@
 
     const productGalleryCanvas = document.querySelector(".productGalleryCanvas");
     const productDisplay = document.querySelector(".productDisplay img");
+    // arrows left and right
+    const productLeftBtn = document.querySelector(".productLeftBtn");
+    const productRightBtn = document.querySelector(".productRightBtn");       
 
-    productData.forEach(el => {
+    productData.forEach(el => {        
         const li = document.createElement("li");
         const img = document.createElement("img");
         productGalleryCanvas.append(li);
@@ -56,11 +59,34 @@
 
         li.addEventListener("click", ()=>{
             productDisplay.setAttribute("src",el.image);
-            productDisplay.setAttribute("alt",el.id)
-        });
+            productDisplay.setAttribute("alt",el.id);  
+
+            let imageID = productDisplay.getAttribute("alt");
+            getID(imageID);                     
+        });    
     });
 
+    function getID(num){
 
+        const NextMove = ()=>{ 
+            if(num < productData.length){
+                num++;
+                let getUrl = productData[num-1].image;
+                productDisplay.setAttribute("src",getUrl); 
+            }else{ num = 0; }           
+        }
+        const PrevMove = ()=>{ 
+            if(num > 1){
+                num--;
+                let getUrl = productData[num-1].image;
+                productDisplay.setAttribute("src",getUrl);
+            }else{ num = productData.length; }         
+        }
 
-
+        // forward btn function    
+        productRightBtn.addEventListener("click", NextMove);
+        // backward btn function            
+        productLeftBtn.addEventListener("click", PrevMove);
+    }
 })();
+
